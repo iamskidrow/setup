@@ -1,0 +1,94 @@
+#! /bin/bash
+
+sudo apt-get -y update
+sudo apt-get -y upgrade
+
+gsettings set org.gnome.desktop.session idle-delay 0
+org.gnome.desktop.interface gtk-color-palette 'black:white:gray50:red:purple:blue:light blue:green:yellow:orange:lavender:brown:goldenrod4:dodger blue:pink:light green:gray10:gray30:gray75:gray90'
+org.gnome.desktop.interface toolkit-accessibility false
+org.gnome.desktop.interface can-change-accels false
+org.gnome.desktop.interface text-scaling-factor 1.0
+org.gnome.desktop.interface cursor-blink true
+org.gnome.desktop.interface menus-have-icons false
+org.gnome.desktop.interface icon-theme 'Papirus'
+org.gnome.desktop.interface gtk-im-preedit-style 'callback'
+org.gnome.desktop.interface automatic-mnemonics true
+org.gnome.desktop.interface menus-have-tearoff false
+org.gnome.desktop.interface cursor-size 24
+org.gnome.desktop.interface buttons-have-icons false
+org.gnome.desktop.interface gtk-im-module 'gtk-im-context-simple'
+org.gnome.desktop.interface gtk-timeout-initial 200
+org.gnome.desktop.interface scaling-factor uint32 0
+org.gnome.desktop.interface gtk-theme 'Pop-dark'
+org.gnome.desktop.interface clock-show-seconds false
+org.gnome.desktop.interface gtk-color-scheme ''
+org.gnome.desktop.interface clock-show-date true
+org.gnome.desktop.interface cursor-blink-time 1200
+org.gnome.desktop.interface toolbar-icons-size 'large'
+org.gnome.desktop.interface clock-show-weekday false
+org.gnome.desktop.interface gtk-timeout-repeat 20
+org.gnome.desktop.interface enable-hot-corners false
+org.gnome.desktop.interface monospace-font-name 'Ubuntu Mono 13'
+org.gnome.desktop.interface toolbar-style 'both-horiz'
+org.gnome.desktop.interface cursor-blink-timeout 10
+org.gnome.desktop.interface overlay-scrolling true
+org.gnome.desktop.interface gtk-key-theme 'Default'
+org.gnome.desktop.interface show-unicode-menu true
+org.gnome.desktop.interface toolbar-detachable false
+org.gnome.desktop.interface cursor-theme 'Pop'
+org.gnome.desktop.interface show-input-method-menu true
+org.gnome.desktop.interface menubar-detachable false
+org.gnome.desktop.interface gtk-im-status-style 'callback'
+org.gnome.desktop.interface document-font-name 'Sans 11'
+org.gnome.desktop.interface menubar-accel 'F10'
+org.gnome.desktop.interface clock-format '12h'
+org.gnome.desktop.interface enable-animations true
+org.gnome.desktop.interface gtk-enable-primary-paste true
+org.gnome.desktop.interface locate-pointer false
+org.gnome.desktop.interface font-name 'Ubuntu 11'
+org.gnome.desktop.interface show-battery-percentage false
+
+
+#Kali tools
+sudo apt install -y apktool; sudo apt install -y arp-scan; sudo apt install -y bbqsql; sudo apt install -y beef; sudo apt install -y beef-xss; sudo apt install -y bettercap; sudo apt install -y bing-ip2hosts; sudo apt install -y curl; sudo apt install -y dex2jar; sudo apt install -y dirb; sudo apt install -y dirbuster; sudo apt install -y dnschef; sudo apt install -y dnsenum; sudo apt install -y dnsmap; sudo apt install -y dnsrecon; sudo apt install -y dnstracer; sudo apt install -y dnswalk; sudo apt install -y dos2unix; sudo apt install -y dotdotpwn; sudo apt install -y dumpzilla; sudo apt install -y edb-debugger; sudo apt install -y enum4linux; sudo apt install -y exiftool; sudo apt install -y exploitdb; sudo apt install -y eyewitness; sudo apt install -y faraday; sudo apt install -y gcc; sudo apt install -y git; sudo apt install -y gnome-tweaks; sudo apt install -y gobuster; sudo apt install -y golang; sudo apt install -y gpp; sudo apt install -y gpp-decrypt; sudo apt install -y gulp; sudo apt install -y guymager; sudo apt install -y hashcat; sudo apt install -y hash-identifier; sudo apt install -y hexinject; sudo apt install -y httptunnel; sudo apt install -y hydra; sudo apt install -y jboss-autopwn; sudo apt install -y john; sudo apt install -y johnny; sudo apt install -y joomscan; sudo apt install -y jq; sudo apt install -y jsql; sudo apt install -y knockpy; sudo apt install -y libcurl4-openssl-dev; sudo apt install -y linux-exploit-suggester; sudo apt install -y masscan; sudo apt install -y metasploit-framework; sudo apt install -y mitmproxy; sudo apt install -y mlocate; sudo apt install -y msfpc; sudo apt install -y ncrack; sudo apt install -y neofetch; sudo apt install -y netcat; sudo apt install -y net-tools; sudo apt install -y nikto; sudo apt install -y nipper-ng; sudo apt install -y nishang; sudo apt install -y nmap; sudo apt install -y nodejs; sudo apt install -y npm; sudo apt install -y openvpn; sudo apt install -y pdf-parser; sudo apt install -y perl; sudo apt install -y phantomjs; sudo apt install -y pipenv; sudo apt install -y powersploit; sudo apt install -y python3; sudo apt install -y python3-capstone; sudo apt install -y python3-distorm3; sudo apt install -y python3-pip; sudo apt install -y python-dev; sudo apt install -y python-distorm3; sudo apt install -y python-dnspython; sudo apt install -y python-setuptools; sudo apt install -y rainbowcrack; sudo apt install -y reaver; sudo apt install -y recon-ng; sudo apt install -y rename; sudo apt install -y ruby; sudo apt install -y ruby-dev; sudo apt install -y ruby-full; sudo apt install -y screenfetch; sudo apt install -y sfuzz; sudo apt install -y smtp-user-enum; sudo apt install -y sqlmap; sudo apt install -y sqlninja; sudo apt install -y sqlsus; sudo apt install -y sslsplit; sudo apt install -y sslstrip; sudo apt install -y sslyze; sudo apt install -y statsprocessor; sudo apt install -y sublist3r; sudo apt install -y termineter; sudo apt install -y thc-ipv6; sudo apt install -y thc-pptp-bruter; sudo apt install -y thc-ssl-dos; sudo apt install -y theharvester; sudo apt install -y uniscan; sudo apt install -y wafw00f; sudo apt install -y websploit; sudo apt install -y weevely; sudo apt install -y wfuzz; sudo apt install -y whatweb; sudo apt install -y whois; sudo apt install -y wifite; sudo apt install -y winexe; sudo apt install -y wireshark; sudo apt install -y wpscan; sudo apt install -y xspy; sudo apt install -y xsser; sudo apt install -y yarn; sudo apt install -y zaproxy
+
+#Making "Tools" Directory in $home
+mkdir $home/Tools; cd $home/Tools
+
+#Cloning tools
+git clone https://github.com/Dionach/CMSmap.git
+git clone https://github.com/m4ll0k/takeover
+git clone https://github.com/maurosoria/dirsearch.git
+git clone https://github.com/blechschmidt/massdns.git
+git clone https://github.com/guelfoweb/knock.git
+git clone https://github.com/iamskidrow/autocon.git
+git clone https://github.com/iamskidrow/wordlists.git
+go get -u github.com/tomnomnom/assetfinder
+go get -u github.com/tomnomnom/meg
+go get -u github.com/hakluke/hakrawler
+go get -u github.com/tomnomnom/httprobe
+go get -u github.com/tomnomnom/unfurl
+go get -u github.com/tomnomnom/waybackurls
+go get -u github.com/jaeles-project/gospider
+go get -u github.com/haccer/subjack
+go get -u github.com/tomnomnom/qsreplace
+go get -u github.com/tomnomnom/hacks/filter-resolved
+go get -u -v github.com/lc/gau
+GO111MODULE=on go get -v github.com/projectdiscovery/subfinder/cmd/subfinder
+
+#Go tools installed in one shot
+cd $home/go/bin; sudo mv * /usr/bin/
+
+#Sublime Text 3
+wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
+sudo apt-get install apt-transport-https -y
+echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+sudo apt-get update -y
+sudo apt-get install sublime-text -y
+
+#Google chrome
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb; sudo dpkg -i google-chrome-stable_current_amd64.deb && rm google-chrome-stable_current_amd64.deb 
+
+sudo gem install wpscan
+
+sudo apt-get full-upgrade -y
