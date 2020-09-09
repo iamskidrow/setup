@@ -27,6 +27,7 @@ go get -u github.com/jaeles-project/gospider
 go get -u github.com/haccer/subjack
 go get -u github.com/tomnomnom/qsreplace
 go get -u github.com/tomnomnom/hacks/filter-resolved
+go get -u github.com/tomnomnom/qsreplace
 go get -u -v github.com/lc/gau
 GO111MODULE=on go get -v github.com/projectdiscovery/subfinder/cmd/subfinder
 GO111MODULE=auto go get -u -v github.com/projectdiscovery/httpx/cmd/httpx
