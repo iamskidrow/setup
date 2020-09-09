@@ -19,6 +19,7 @@ git clone https://github.com/iamskidrow/autocon.git
 git clone https://github.com/iamskidrow/wordlists.git
 go get -u github.com/tomnomnom/assetfinder
 go get -u github.com/tomnomnom/meg
+go get -u github.com/tomnomnom/anew
 go get -u github.com/hakluke/hakrawler
 go get -u github.com/tomnomnom/httprobe
 go get -u github.com/tomnomnom/unfurl
