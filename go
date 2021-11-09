@@ -8,7 +8,6 @@ go get -u github.com/tomnomnom/httprobe
 go get -u github.com/tomnomnom/unfurl
 go get -u github.com/tomnomnom/waybackurls
 go get -u github.com/jaeles-project/gospider
-go get -u github.com/haccer/subjack
 go get -u github.com/tomnomnom/qsreplace
 go get -u github.com/tomnomnom/hacks/filter-resolved
 go get -u -v github.com/lc/gau
